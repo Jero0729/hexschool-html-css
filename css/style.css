@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------------------box---------------------------------*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.wrap {
+  width: 1025px;
+  margin: 0 auto;
+}
+
+/*---------------------------------header---------------------------------*/
+.icon ul {
+	background: #f6f6f6;
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px 0;
+  }
+  .icon a {
+	text-decoration: none;
+	display: flex;
+  }
+  .icon a:hover {
+	background: #ccc;
+  }
+  .icon img {
+	display: block;
+  }
+  .icon .fb,
+  .twitter {
+	padding: 0 10px;
+  }
+  .icon .fb {
+	border-right: 2px solid #ccc;
+  }
+  .icon .fb span {
+	margin-left: 4px;
+	color: #4262a0;
+  }
+  .icon .twitter span {
+	margin-left: 4px;
+	color: #4ab0ff;
+  }
+  .nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  .nav h1 a {
+	width: 224px;
+	height: 50px;
+	display: block;
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+  }
+  .nav .list {
+	display: flex;
+  }
+  .nav .list li a {
+	text-decoration: none;
+	color: #45d3a4;
+	padding: 15px 20px 15px 20px;
+	position: relative;
+  }
+  .nav .list li a:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	border-bottom: 5px solid transparent;
+	transition: 1s ease-in-out;
+  }
+  .nav .list li a:hover:after {
+	width: 100%;
+	border-bottom: 5px solid #45d3a4;
+  }
+  .banner {
+	width: 100%;
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+	background-size: cover;
+	padding: 92.5px 0;
+  }
+  .banner h2 {
+	color: white;
+	font-size: 36px;
+	background: rgba(0, 0, 0, 0.2);
+	line-height: 50px;
+	padding: 35px 20px;
+  }
+  /*--------------------------------main---------------------------------*/
+  .introduction {
+	display: flex;
+	justify-content: space-around;
+	margin: 60px 0;
+  }
+  .introduction .introduction-item {
+	box-shadow: 0 5px 5px -2px gray;
+	width: 300px;
+	padding: 0px 10px 20px 10px;
+  }
+  .introduction .introduction-item h3 {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 10px;
+	text-align: center;
+  }
+  .introduction .introduction-item p {
+	line-height: 1.5;
+  }
+  .introduction .introduction-item .adjust-img {
+	height: 170px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .introduction .introduction-item ul li {
+	list-style-type: disc;
+	margin-left: 20px;
+	line-height: 1.5;
+  }
+  .difference .sheet {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 65px;
+  }
+  .difference .sheet th,td {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 10px 90px 10px 20px;
+	text-align: left;
+  }
+  .difference .sheet th {
+	background: #f7f7f7;
+	font-weight: bold;
+  }
+  .difference h2 {
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 30px;
+  }
+  .difference .sheet .color-text {
+	color: #03a476;
+  }
+  .contact {
+	background: linear-gradient(to bottom, #00674c, #00966e);
+  }
+  .contact h2 {
+	text-align: center;
+	font-size: 26px;
+	color: white;
+	line-height: 1.5;
+	padding: 40px 0 25px;
+  }
+  .contact form {
+	display: flex;
+	justify-content: space-around;
+  }
+  .contact form textarea {
+	width: 460px;
+	height: 240px;
+  }
+  .contact form .information {
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+  }
+  .contact form .information label {
+	margin-bottom: 5px;
+  }
+  .contact form .information input {
+	width: 460px;
+	padding: 8px;
+	border-radius: 5px;
+	margin-bottom: 15px; 
+  }
+  .contact form .information .sumbit-button {
+	text-align: right;
+  }
+  .contact form .information input[type="submit"] {
+	width: 90px;
+	padding: 10px;
+	background: #00ce98;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+  }
+  /*---------------------------------footer---------------------------------*/
+  .footer {
+	display: flex;
+	justify-content: space-between;
+	margin: 25px 15px;
+  }
+  .footer .logo a {
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png);
+	width: 171px;
+	height: 36px;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	display: block;
+  }
+  ul li a {
+	color: #e42c70;
+	text-decoration: none;
+	line-height: 1.4;
+  }
+  ul li a:hover {
+	color: #aea;
+  }
