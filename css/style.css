@@ -59,7 +59,7 @@ table {
 }
 
 /*---------------------------------header---------------------------------*/
-.icon ul {
+.icon {
 	background: #f6f6f6;
 	display: flex;
 	justify-content: flex-end;
@@ -112,6 +112,7 @@ table {
 	color: #45d3a4;
 	padding: 15px 20px 15px 20px;
 	position: relative;
+  display: block ;  
   }
   .nav .list li a:after {
 	content: "";
@@ -175,7 +176,7 @@ table {
 	justify-content: center;
 	margin-bottom: 65px;
   }
-  .difference .sheet th,td {
+  .difference .sheet th,.difference .sheet td {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 	padding: 10px 90px 10px 20px;
@@ -237,6 +238,9 @@ table {
 	font-weight: bold;
 	cursor: pointer;
   }
+.contact form .information input[type="submit"]:hover{
+  background:black;
+}
   /*---------------------------------footer---------------------------------*/
   .footer {
 	display: flex;
